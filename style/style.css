@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+}
+
+header {
+  background-color: #161618;
+  color: #fff;
+  padding: 15px;
+}
+
+header h1 {
+  font-size: 1.4rem;
+}
+
+main {
+  padding-top: 30px;
+}
