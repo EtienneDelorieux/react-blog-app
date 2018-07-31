@@ -1,1 +1,3 @@
-# React Blog App made with Stephen Grider's Udemy formation
+# React Blog App
+
+This tiny app was made with Stephen Grider's Udemy formation.
