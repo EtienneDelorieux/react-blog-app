@@ -6,13 +6,18 @@
 }
 
 :root {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 body {
   background-color: #ededed !important;
   color: #626262 !important;
 }
+
+
+/*****
+****** HEADER
+*****/
 
 header {
   background-color: #161618;
@@ -33,22 +38,75 @@ header a:hover {
   font-weight: bold;
   margin: 0;
   color: #fff;
+  position: relative;
+  transition: all 0.5s;
 }
 
-.newPostButton {
-  display: inline-block;
-  background-color: #0051c9;
+.logo:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
   color: #fff;
+  background-color: #fff;
+  top: 10px;
+  transform: translateX(-50px);
+}
+
+.logo:hover {
+  transform: translateX(30px);
+}
+
+.logo:hover:before {
+  transform: translateX(0px;);
+}
+
+.newPostBtn {
+  display: inline-block;
+}
+
+
+/*****
+****** GLOBAL
+*****/
+
+a i {
+  margin-right: 10px;
+}
+
+.btn {
   padding: 5px 15px;
   transition: all 0.3s;
+  border-radius: 0 !important;
 }
 
-.newPostButton:hover {
-  background-color: #005ae0;
+.btn--primary {
+  background-color: #0051c9;
+  color: #fff;
 }
 
-main {
-  padding-top: 60px;
+.btn--primary:hover {
+  background-color: #005ce4;
+  color: #fff;
+}
+
+.btn--primary:focus {
+  color: #fff;
+}
+
+.btn--secondary {
+  background-color: #bebebe;
+  color: #000000;
+}
+
+.btn--secondary:hover {
+  background-color: #cbcbcb;
+  color: #000000;
+}
+
+.btn--secondary:focus {
+  color: #000000;
 }
 
 h1,
@@ -68,6 +126,15 @@ h2 {
   font-size: 1.5rem !important;
   font-weight: bold !important;
   margin-bottom: 15px !important;
+}
+
+
+/*****
+****** CONTENT
+*****/
+
+main {
+  padding-top: 60px;
 }
 
 article {

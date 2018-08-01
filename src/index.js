@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import promise from "redux-promise";
 
 // Components
@@ -23,10 +23,15 @@ ReactDOM.render(
       <div id="wrapper">
         <Header />
         <main className="container">
-          <Route exact path="/" component={PostsIndex} />
-          <Route path="/posts/new" component={PostsNew} />
+          <Switch>
+            <Route path="/posts/new" component={PostsNew} />
+            <Route exact path="/" component={PostsIndex} />
+          </Switch>
         </main>
       </div>
     </BrowserRouter>
   </Provider>
   , document.querySelector("#root"));
+
+// In a Switch component, put the most specific route in first position
+// and the least specific route in last position

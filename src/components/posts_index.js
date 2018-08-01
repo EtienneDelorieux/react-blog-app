@@ -22,7 +22,7 @@ class PostsIndex extends Component {
 
   render() {
     return (
-      <section className="postsList">
+      <section id="postsList">
         <h1>Posts index</h1>
         {this.renderPosts()}
       </section>
