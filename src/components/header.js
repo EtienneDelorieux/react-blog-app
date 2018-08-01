@@ -7,7 +7,7 @@ export default class Header extends Component {
       <header>
         <a className="logo" href="/">Bloggy.</a>
         <Link to="/posts/new" className="btn btn--primary newPostBtn">
-          <i class="fas fa-feather-alt"></i>Write stuff
+          <i className="fas fa-feather-alt"></i>Write stuff
         </Link>
       </header>
     )

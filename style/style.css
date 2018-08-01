@@ -149,3 +149,7 @@ p.categories {
   font-size: 0.75rem;
   padding: 0 5px;
 }
+
+.newPostForm {
+  margin-bottom: 60px;
+}
