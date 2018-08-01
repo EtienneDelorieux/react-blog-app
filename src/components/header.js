@@ -4,7 +4,7 @@ export default class Header extends Component {
   render() {
     return (
       <header>
-        <h1>React Blog App</h1>
+        <h1>Bloggy.</h1>
       </header>
     )
   }
