@@ -9,6 +9,7 @@ import promise from "redux-promise";
 // Components
 import Header from "./components/header";
 import PostsIndex from "./components/posts_index";
+import PostsNew from "./components/posts_new";
 
 // Reducers
 import reducers from "./reducers";
@@ -22,7 +23,8 @@ ReactDOM.render(
       <div id="wrapper">
         <Header />
         <main className="container">
-          <Route path="/" component={PostsIndex} />
+          <Route exact path="/" component={PostsIndex} />
+          <Route path="/posts/new" component={PostsNew} />
         </main>
       </div>
     </BrowserRouter>

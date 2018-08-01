@@ -4,7 +4,8 @@ export default class Header extends Component {
   render() {
     return (
       <header>
-        <h1>Bloggy.</h1>
+        <a class="logo" href="/">Bloggy.</a>
+        <a class="newPostButton" href="/posts/new">New Post</a>
       </header>
     )
   }
