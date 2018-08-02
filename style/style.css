@@ -29,20 +29,37 @@ button i {
   padding: 5px 15px;
   transition: all 0.3s;
   border-radius: 0 !important;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn--primary,
+.btn--danger,
+.btn--primary:hover,
+.btn--danger:hover,
+.btn--primary:focus,
+.btn--danger:focus {
+  color: #fff;
 }
 
 .btn--primary {
   background-color: #0051c9;
-  color: #fff;
 }
 
 .btn--primary:hover {
   background-color: #005ce4;
-  color: #fff;
 }
 
-.btn--primary:focus {
-  color: #fff;
+.btn--danger {
+  background-color: #d4311a;
+}
+
+.btn--danger:hover {
+  background-color: #ee2b0f;
 }
 
 .btn--secondary {
@@ -239,7 +256,8 @@ input.valid:focus {
   color: #ff0026;
 }
 
-.formActions {
+.formActions,
+.postActions {
   display: flex;
   justify-content: space-between;
 }

@@ -26,9 +26,14 @@ class PostsShow extends Component {
             <p>{post.categories}</p>
           </span>
         </article>
-        <Link to="/" className="btn btn--secondary">
-          <i className="fas fa-angle-left"></i>Back to index
-        </Link>
+        <div className="postActions">
+          <Link to="/" className="btn btn--secondary">
+            <i className="fas fa-angle-left"></i>Back to index
+          </Link>
+          <Link to="/posts/new" className="btn btn--danger newPostBtn">
+            <i className="fas fa-trash-alt"></i>Delete
+          </Link>
+        </div>
       </section>
     );
   }
