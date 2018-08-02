@@ -22,7 +22,9 @@ class PostsShow extends Component {
         <article className="postShow">
           <h1 className="postTitle">{post.title}</h1>
           <p>{post.content}</p>
-          <p class="categories">{post.categories}</p>
+          <span className="categories">
+            <p>{post.categories}</p>
+          </span>
         </article>
         <Link to="/" className="btn btn--secondary">
           <i className="fas fa-angle-left"></i>Back to index

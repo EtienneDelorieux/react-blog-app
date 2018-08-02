@@ -150,7 +150,11 @@ article {
   margin-bottom: 30px !important;
 }
 
-p.categories {
+.categories {
+  display: block;
+}
+
+.categories p {
   text-transform: uppercase;
   color: #fff;
   background-color: #000;
@@ -162,6 +166,36 @@ p.categories {
 .newPostForm {
   margin-bottom: 60px;
 }
+
+a.postTitle {
+  position: relative;
+  display: inline-block;
+}
+
+a.postTitle:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  bottom: 5px;
+  right: 0;
+  background: #000;
+  transition: width .3s ease;
+  -webkit-transition: width .3s ease;
+}
+
+a.postTitle:hover {
+  text-decoration: none;
+}
+
+a.postTitle:hover:after {
+  width: 100%;
+  left: 0;
+  background: #000;
+}
+
+
 
 /* FORM */
 label {
