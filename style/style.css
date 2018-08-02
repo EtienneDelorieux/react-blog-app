@@ -73,13 +73,15 @@ h1 {
   margin-bottom: 60px !important;
 }
 
-h2 {
+h2,
+h1.postTitle {
   font-size: 1.5rem !important;
   margin-bottom: 15px !important;
+  text-transform: none;
 }
 
 .container {
-  max-width: 600px !important;
+  max-width: 700px !important;
 }
 
 
@@ -145,7 +147,7 @@ main {
 }
 
 article {
-  margin-bottom: 60px !important;
+  margin-bottom: 30px !important;
 }
 
 p.categories {
